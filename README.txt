@@ -1,12 +1,14 @@
 See http://http://web.cs.dal.ca/~skelly/csci3154-mspacman/ for detailed information about this assignment.
 
+NOTE: My own work consists of the contents within AIControllerPacMan.java
+
 This distribution contains the following:
 
 mspacman-sensors.pdf -- complete description of the state variables available in Ms. Pac-Man
 
-src/B00XXXXXXPacMan.class -- basic Ms. Pac-Man controller class (compiles)
+src/AIControllerPacMan.class -- basic Ms. Pac-Man controller class (compiles)
 
-src/B00XXXXXXPacMan.java -- basic Ms. Pac-Man controller class (source)
+src/AIControllerPacMan.java -- basic Ms. Pac-Man controller class (source) MAIN LOGIC FOR PACMAN AI
 
 src/behaviour.txt -- a brief description of the controller's behaviour
 
