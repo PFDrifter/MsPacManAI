@@ -1,0 +1,24 @@
+This controller follows a state machine format. The controller has 5 different states which include: Gathering,
+Running, Chasing, Powerpill and Lure. Before each even is selected a series of test are checked to see if 
+Mrs. PacMan should change state. If the closest ghost is further than the distance tolerance than she enters the
+Gathering state where she looks for the closest pill. If she gets to close to a powerpill in the Gathering state and
+the ghosts are still futher than the distance tolerance than she enteres the Lure state. Within the Lure state she
+purposly "waits" to eat the powerpill untill the ghosts are at a closer distance in order to maximize ghost eating
+score. If the closest ghost is closer than the distance tolerance than Mrs. Pacman first checks to see if she is
+within 10 steps of a powerpill. If so, then she enters the Powerpill state where she heads towards the closest powerpill.
+If any ghosts are edible within the whole map, then Mrs. PacMan enters the Chasing state where she finds and heads
+towards the closet ghost in order to eat him. Within this state she also checks to see if the closest and second
+closest ghost are still edible (In case they were eaten and respawned). If either ghost are no closer edible and
+closer than the distance tolerance then she enters the Running state. She can also enter the running state if the
+ghosts are closer than the distance tolerance, approaching and there is no powerpill within 10 steps. Within the
+running state Mrs. PacMan attempts to head in the opposite direction of the closest ghost (if a valid direction).
+If not, than she tries to find the closest proportions of junctions closer than the nearest ghosts and heads in
+ that direction.
+ 
+ Testing environment: 
+ Ubuntu 16.04
+ Java Version 1.8.0_91
+ 
+ Expected Average Score:
+ 3000 - 3800
+			
